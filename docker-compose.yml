@@ -7,9 +7,9 @@ services:
         dockerfile: Dockerfile
       volumes:
         - backend_data:/app/lab1_back
+      restart: always
       ports:
         - "5000:5000"
-      restart: always
 
   frontend:
     ports:
